@@ -4,6 +4,7 @@ import FinancesList from './js/app/components/FinancesList'
 import FinanceForm from './js/app/components/FinanceForm'
 import FinanceImport from './js/app/components/FinanceImport';
 import { FinanceContextProvider } from "./js/app/store";
+import Example from './js/app/components/Example';
 
 export default () => {
   return (
@@ -13,6 +14,7 @@ export default () => {
         <h1 className="h2 py-2">My Finances</h1>
       </div>
       <FinanceContextProvider>
+        <Example/>
         <FinanceImport />
         <FinanceForm />
         <FinancesList />

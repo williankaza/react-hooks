@@ -15,6 +15,10 @@ const reducer = (state, action) => {
             return {
                 finances: [...state.finances, action.payload]
             }
+        case "ADD_COUNT":
+                return {
+                    finances: [...state.finances, action.payload]
+                }
         default:
             throw new Error()
     }
